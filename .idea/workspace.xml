@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66c00283-db4b-4cfd-8a40-62c2331ac073" name="Default Changelist" comment="" />
+    <list default="true" id="66c00283-db4b-4cfd-8a40-62c2331ac073" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.aux" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.fdb_latexmk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.fls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.synctex.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/check_solution.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/0testsmall.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/1testsmallmessy.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/2testmid.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/3testlarge.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/4testhuge.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/5testhugemessy.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/output_validator/output_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/check_solution.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/0testsmall.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/1testsmallmessy.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/2testmid.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/3testlarge.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/4testhuge.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/5testhugemessy.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/output_validator/output_validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/report.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/Solution.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,19 +46,27 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1Zhvxr9Xgq95q1UHSzRn8mGReat" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="LaTeX.report">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -63,8 +100,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="report" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" temporary="true">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <viewer-command />
+        <compiler-arguments />
+        <main-file>$PROJECT_DIR$/1stablemarriage/report.tex</main-file>
+        <aux-dir>false</aux-dir>
+        <out-dir>true</out-dir>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <has-been-run>true</has-been-run>
+        <bib-run-config />
+        <makeindex-run-config />
+      </texify>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="LaTeX.report" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Main" />
       </list>
@@ -99,11 +155,35 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" width="1280" height="721" key="SettingsEditor" timestamp="1585410427694">
+    <state x="132" y="1" key="CommitChangelistDialog2" timestamp="1585492760072">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="132" y="1" key="CommitChangelistDialog2/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492760072" />
+    <state width="1238" height="67" key="GridCell.Tab.0.bottom" timestamp="1585492760335">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="67" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492760335" />
+    <state width="1238" height="67" key="GridCell.Tab.0.center" timestamp="1585492760331">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="67" key="GridCell.Tab.0.center/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492760331" />
+    <state width="1238" height="67" key="GridCell.Tab.0.left" timestamp="1585492760330">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="67" key="GridCell.Tab.0.left/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492760330" />
+    <state width="1238" height="67" key="GridCell.Tab.0.right" timestamp="1585492760333">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="67" key="GridCell.Tab.0.right/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492760333" />
+    <state x="0" y="0" width="1280" height="722" key="SettingsEditor" timestamp="1585492280822">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1280.800/1280.-17.1024.745@0.0.1280.800" timestamp="1585410427694" />
+    <state x="0" y="0" width="1280" height="722" key="SettingsEditor/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492280822" />
     <state x="0" y="23" width="1280" height="721" key="SettingsEditor/0.23.1280.721/1280.-17.1024.745@0.23.1280.721" timestamp="1585410286588" />
     <state x="17" y="23" key="new project wizard" timestamp="1585410352994">
       <screen x="0" y="23" width="1280" height="721" />

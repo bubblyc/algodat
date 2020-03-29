@@ -27,22 +27,27 @@ public class Solution {
         if (scanner.hasNextLine()) {
             String lineOfInput = scanner.nextLine();
             nrbOfPairs = Integer.parseInt(lineOfInput);
+            System.out.println(nrbOfPairs);
         }
+
         // Adds information to the lists from readin.
         while (scanner.hasNextLine()) {
-            String temp[] = scanner.nextLine().split(" ");
+            String temp[] = scanner.nextLine().split(" "); //O(n)
+            if(temp.length - 1 != nrbOfPairs){ 
+                break;
+            }
             // If the number already exists in women, then add to the list of men.
             if (women.contains(Integer.parseInt(temp[0]))) {
-                availableMen.add(Integer.parseInt(temp[0]));
+                //availableMen.add(Integer.parseInt(temp[0]));
                 // Add to preference list
                 Queue<Integer> temporaryPrefList = new LinkedList<>();
-                for (int i = 1; i < temp.length; i++) {
+                for (int i = 1; i < temp.length; i++) { //O(n)
                     temporaryPrefList.add(Integer.parseInt(temp[i]));
-                }
+                } 
                 mPreferenceList.put(Integer.parseInt(temp[0]), temporaryPrefList);
                 // Else add woman to the list and add her preference list
             } else {
-                women.add(Integer.parseInt(temp[0]));
+                women.add(Integer.parseInt(temp[0])); 
                 List<Integer> temporaryPrefList = new LinkedList<>();
                 for (int i = 1; i < temp.length; i++) {
                     temporaryPrefList.add(Integer.parseInt(temp[i]));
@@ -57,36 +62,33 @@ public class Solution {
     public static boolean compareFondness(List<Integer> herPrefList, int proposer, int engagedWith) {
         int proposerRank = herPrefList.indexOf(proposer);
         int engagedWithRank = herPrefList.indexOf(engagedWith);
-        if (proposerRank < engagedWithRank) {
-            return true;
-        } else {
-            return false;
-        }
-
+        return proposerRank < engagedWithRank;
     }
-
+    
     // If woman has no partner engage.
     // Else, will she remarry and leave her man?
     // If she remarries, put her old man in the availableMen list.
     public static void stableMarriage() {
-    
-        addEachManToList();
-
-        while (!availableMen.isEmpty()) {
-            int proposer = availableMen.peek();
-            int hisFavoriteGal = mPreferenceList.get(proposer).peek();
+        addEachManToList(); //O(n)
+        while (availableMen.size()!=0) { // W = O(n^2)
+            int proposer = availableMen.poll();
+            int hisFavoriteGal = mPreferenceList.get(proposer).poll();
+            //System.out.println(proposer+" is asking "+hisFavoriteGal);
 
             if (!engaged.containsKey(hisFavoriteGal)) {
-                engaged.put(proposer, hisFavoriteGal);
-                availableMen.remove(proposer);
+                engaged.put(hisFavoriteGal, proposer);
+                //System.out.println(proposer+" engaged to " +hisFavoriteGal);
             } else {
                 List<Integer> herPrefList = wPreferenceList.get(hisFavoriteGal);
                 int oldMan = engaged.get(hisFavoriteGal);
-                boolean remarry = compareFondness(herPrefList, proposer, oldMan);
-                if (remarry) {
+                //System.out.println("but "+hisFavoriteGal+" is engaged");
+                if (compareFondness(herPrefList, proposer, oldMan)) {
                     engaged.put(hisFavoriteGal, proposer);
-                    availableMen.remove(proposer);
                     availableMen.add(oldMan);
+                    //System.out.println(hisFavoriteGal+" dumped her man for "+ proposer);
+                }else{
+                    availableMen.add(proposer);
+                    //System.out.println(hisFavoriteGal+" doesn't want "+ proposer);
                 }
             }
         }
@@ -99,10 +101,16 @@ public class Solution {
     }
 
     public static void main(String[] args) {
+        double t1 = System.currentTimeMillis();
         readInFromConsole();
+        double t2 = System.currentTimeMillis();
         stableMarriage();
+        double t3 = System.currentTimeMillis();
         printResults();
-        printPrefList();
+        System.out.println("Reading took: "+(t2-t1)/1000 + "seconds");
+        System.out.println("statle marriage took: "+(t3-t2)/1000 + "seconds");
+        System.out.println("everything: "+(t3-t1)/1000 + "seconds");
+        //printPrefList();
     }
 
     public static void printResults() {
@@ -122,130 +130,3 @@ public class Solution {
     }
 
 }
-
-
-
-
-
-
-
-
-
-// import java.util.HashMap;
-// import java.util.ArrayList;
-// import java.util.List;
-// import java.util.Map;
-// import java.util.Scanner;
-
-// public class Solution {
-//     private static Map<Integer, List<Integer>> menPreference = new HashMap<>();
-//     private static Map<Integer, List<Integer>> womenPreference = new HashMap<>(); 
-//     private static Map<Integer, Integer> engaged = new HashMap<>();
-//     private static List <Integer> freeMen = new ArrayList<>();
-//     private static List <Integer> women = new ArrayList<>();
-//     private static int nrOfPairs;
-    
-    
-//     public static void in(){
-//         Scanner scanner = new Scanner(System.in);
-//         if(scanner.hasNextLine()){
-//             String lineOfInput = scanner.nextLine();
-//             nrOfPairs = Integer.parseInt(lineOfInput);
-//         }
-        
-//         while (scanner.hasNextLine()) {
-//             String temp[] = scanner.nextLine().split(" ");
-            
-//             if(women.contains(Integer.parseInt(temp[0]))) {
-//                 freeMen.add(Integer.parseInt(temp[0]));
-//                 List<Integer> tempList = new ArrayList<>();
-//                 for (int i = 1; i < temp.length; i ++) {
-//                     tempList.add(Integer.parseInt(temp[i]));
-//                 }
-//                 menPreference.put(Integer.parseInt(temp[0]), tempList);
-//             }else{
-//                 women.add(Integer.parseInt(temp[0]));
-//                 List<Integer> tempList = new ArrayList<>();
-//                 for (int i = 1; i < temp.length; i ++) {
-//                     tempList.add(Integer.parseInt(temp[i]));
-//                 }
-//                 womenPreference.put(Integer.parseInt(temp[0]), tempList);
-//             }         
-//         }
-//         scanner.close(); 
-//     }
-
-    
-
-//     public static void stableMarriage(){
-        
-        
-//         for(Map.Entry<Integer, List<Integer>> men : menPreference.entrySet()){
-//             freeMen.add(men.getKey());
-//         }
-//         while(freeMen.size()!=0){
-//             int currentMan = freeMen.get(0);
-//             freeMen.remove(0);
-//             int hisFavourite = menPreference.get(currentMan).get(0);
-//             menPreference.get(currentMan).remove(0);
-//             if(!engaged.containsKey(hisFavourite)){
-//                 engaged.put(hisFavourite, currentMan);
-//             } else {
-//                 List<Integer> herList = womenPreference.get(hisFavourite);
-//                 int herMan = engaged.get(hisFavourite);
-//                 if(herList.indexOf(currentMan) < herList.indexOf(herMan)){
-//                     engaged.put(hisFavourite, currentMan);
-//                     freeMen.add(herMan);
-//                 }
-//                 else{
-//                     freeMen.add(currentMan);
-//                 }
-//             }
-
-//         }
-
-//     }
-//     /*
-//     public static void out(){
-
-//     }
-//     */
-
-//     public static void main(String[] args) {
-//         /*
-//         prefw1.add(1);
-//         prefw1.add(2);
-//         List<Integer> prefw2 = new ArrayList<>();
-//         prefw2.add(2);
-//         prefw2.add(1);
-//         womenPreference.put(1, prefw1);
-//         womenPreference.put(2, prefw2);
-//         List<Integer> prefm1 = new ArrayList<>();
-//         prefm1.add(2);
-//         prefm1.add(1);
-//         List<Integer> prefm2 = new ArrayList<>();
-//         prefm2.add(1);
-//         prefm2.add(2);
-//         menPreference.put(1, prefm1);
-//         menPreference.put(2, prefm2);
-//         */
-        
-//         in();
-
-//         stableMarriage();
-
-//         for (Map.Entry<Integer, Integer> entry : engaged.entrySet()) {
-//             System.out.println( entry.getValue().toString());
-//         }
-
-//         for (Map.Entry<Integer, List<Integer>> entry : menPreference.entrySet()) {
-//             System.out.println( entry.getKey() + ":" + entry.getValue().toString());
-//         }
-
-//         for (Map.Entry<Integer, List<Integer>> entry : womenPreference.entrySet()) {
-//             System.out.println( entry.getKey() + ":" + entry.getValue().toString());
-//         }
-//     }
-
-
-// }
