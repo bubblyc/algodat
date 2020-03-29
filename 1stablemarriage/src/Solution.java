@@ -33,7 +33,7 @@ public class Solution {
         // Adds information to the lists from readin.
         while (scanner.hasNextLine()) {
             String temp[] = scanner.nextLine().split(" "); //O(n)
-            if(temp.length - 1 != nrbOfPairs){ 
+            if (temp.length - 1 != nrbOfPairs) {
                 break;
             }
             // If the number already exists in women, then add to the list of men.
@@ -43,11 +43,12 @@ public class Solution {
                 Queue<Integer> temporaryPrefList = new LinkedList<>();
                 for (int i = 1; i < temp.length; i++) { //O(n)
                     temporaryPrefList.add(Integer.parseInt(temp[i]));
-                } 
+                }
                 mPreferenceList.put(Integer.parseInt(temp[0]), temporaryPrefList);
                 // Else add woman to the list and add her preference list
-            } else {
-                women.add(Integer.parseInt(temp[0])); 
+            }
+            else {
+                women.add(Integer.parseInt(temp[0]));
                 List<Integer> temporaryPrefList = new LinkedList<>();
                 for (int i = 1; i < temp.length; i++) {
                     temporaryPrefList.add(Integer.parseInt(temp[i]));
@@ -64,13 +65,13 @@ public class Solution {
         int engagedWithRank = herPrefList.indexOf(engagedWith);
         return proposerRank < engagedWithRank;
     }
-    
+
     // If woman has no partner engage.
     // Else, will she remarry and leave her man?
     // If she remarries, put her old man in the availableMen list.
     public static void stableMarriage() {
         addEachManToList(); //O(n)
-        while (availableMen.size()!=0) { // W = O(n^2)
+        while (availableMen.size() != 0) { // W = O(n^2)
             int proposer = availableMen.poll();
             int hisFavoriteGal = mPreferenceList.get(proposer).poll();
             //System.out.println(proposer+" is asking "+hisFavoriteGal);
@@ -78,7 +79,8 @@ public class Solution {
             if (!engaged.containsKey(hisFavoriteGal)) {
                 engaged.put(hisFavoriteGal, proposer);
                 //System.out.println(proposer+" engaged to " +hisFavoriteGal);
-            } else {
+            }
+            else {
                 List<Integer> herPrefList = wPreferenceList.get(hisFavoriteGal);
                 int oldMan = engaged.get(hisFavoriteGal);
                 //System.out.println("but "+hisFavoriteGal+" is engaged");
@@ -86,7 +88,8 @@ public class Solution {
                     engaged.put(hisFavoriteGal, proposer);
                     availableMen.add(oldMan);
                     //System.out.println(hisFavoriteGal+" dumped her man for "+ proposer);
-                }else{
+                }
+                else {
                     availableMen.add(proposer);
                     //System.out.println(hisFavoriteGal+" doesn't want "+ proposer);
                 }
@@ -107,9 +110,9 @@ public class Solution {
         stableMarriage();
         double t3 = System.currentTimeMillis();
         printResults();
-        System.out.println("Reading took: "+(t2-t1)/1000 + "seconds");
-        System.out.println("statle marriage took: "+(t3-t2)/1000 + "seconds");
-        System.out.println("everything: "+(t3-t1)/1000 + "seconds");
+        System.out.println("Reading took: " + (t2 - t1) / 1000 + "seconds");
+        System.out.println("statle marriage took: " + (t3 - t2) / 1000 + "seconds");
+        System.out.println("everything: " + (t3 - t1) / 1000 + "seconds");
         //printPrefList();
     }
 
