@@ -7,11 +7,11 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Solution {
+public class SolutionInv {
     // Key: Man, Value: His preference list
     private static Map<Integer, Queue<Integer>> mPreferenceList = new HashMap<>();
     // Key: Woman, Value: Her preference list
-    private static Map<Integer, List<Integer>> wPreferenceList = new HashMap<>();
+    private static Map<Integer, int[]> wPreferenceList = new HashMap<>();
     // List of engaged couples. Key: Woman, Value: Her engaged man
     private static Map<Integer, Integer> engaged = new HashMap<>();
     // List of all the available men
@@ -56,7 +56,7 @@ public class Solution {
                 // Else add woman to the list and add her preference list
             }
             else {
-                
+                /*
                 women.add(temp[0]);
                 //System.out.println("tjej: ");
                 List<Integer> temporaryPrefList = new LinkedList<>();
@@ -66,8 +66,12 @@ public class Solution {
                         //System.out.println("-> " + in);
                     }
                     //System.out.println("---");
+                }*/
+                int temporaryPrefList[] = new int[nrbOfPairs + 1];
+                for (int i = 1; i < temporaryPrefList.length; i++) { //O(n)
+                    temporaryPrefList[temp[i]] = i;
+                    women.add(temp[0]);
                 }
-               
                 wPreferenceList.put(temp[0], temporaryPrefList);
             }
         }
@@ -96,10 +100,10 @@ public class Solution {
                 //System.out.println(proposer+" engaged to " +hisFavoriteGal);
             }
             else {
-                List<Integer> herPrefList = wPreferenceList.get(hisFavoriteGal);
+                int[] herPrefList = wPreferenceList.get(hisFavoriteGal);
                 int oldMan = engaged.get(hisFavoriteGal);
                 //System.out.println("but "+hisFavoriteGal+" is engaged");
-                if (compareFondness(herPrefList, proposer, oldMan)) {
+                if (herPrefList[oldMan] > herPrefList[proposer]) {
                     engaged.put(hisFavoriteGal, proposer);
                     availableMen.add(oldMan);
                     //System.out.println(hisFavoriteGal+" dumped her man for "+ proposer);
@@ -143,7 +147,7 @@ public class Solution {
             System.out.println(entry.getKey() + ":" + entry.getValue().toString());
         }
 
-        for (Map.Entry<Integer, List<Integer>> entry : wPreferenceList.entrySet()) {
+        for (Map.Entry<Integer, int[]> entry : wPreferenceList.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue().toString());
         }
     }
