@@ -27,47 +27,27 @@ public class Solution {
         if (scanner.hasNextLine()) {
             nrbOfPairs = Integer.parseInt(scanner.nextLine());
         }
-
         // Adds information to the lists from readin.
-        while (scanner.hasNextLine()&&scanner.hasNextInt()) {
-            int temp[] = new int[nrbOfPairs + 1]; 
-            //System.out.println("array size " + temp.length);
-           
-            for(int i = 0; i <= nrbOfPairs; i++){
+        while (scanner.hasNextLine() && scanner.hasNextInt()) {
+            int[] temp = new int[nrbOfPairs + 1];
+            for (int i = 0; i <= nrbOfPairs; i++) {
                 temp[i] = scanner.nextInt();
-                //System.out.println("temp" + i + " " + temp[i]);
             }
-
-
             // If the number already exists in women, then add to the list of men.
             if (women.contains(temp[0])) {
-                //availableMen.add(temp[0]);
-                // Add to preference list
-                //System.out.println("kille: ");
                 Queue<Integer> temporaryPrefList = new LinkedList<>();
                 for (int i = 1; i < temp.length; i++) { //O(n)
                     temporaryPrefList.add(temp[i]);
-                    for(Integer in:temporaryPrefList){
-                        //System.out.println("-> " + in);
-                    }
-                    //System.out.println("---");
                 }
                 mPreferenceList.put(temp[0], temporaryPrefList);
-                // Else add woman to the list and add her preference list
             }
+            // Else add woman to the list and add her preference list
             else {
-                
                 women.add(temp[0]);
-                //System.out.println("tjej: ");
                 List<Integer> temporaryPrefList = new LinkedList<>();
                 for (int i = 1; i < temp.length; i++) {
                     temporaryPrefList.add(temp[i]);
-                    for(Integer in:temporaryPrefList){
-                        //System.out.println("-> " + in);
-                    }
-                    //System.out.println("---");
                 }
-               
                 wPreferenceList.put(temp[0], temporaryPrefList);
             }
         }
@@ -119,32 +99,21 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        //printPrefList();
         double t1 = System.currentTimeMillis();
         readInFromConsole();
         double t2 = System.currentTimeMillis();
         stableMarriage();
         double t3 = System.currentTimeMillis();
         printResults();
-        System.out.println("Reading took: " + (t2 - t1) / 1000 + "seconds");
-        System.out.println("statle marriage took: " + (t3 - t2) / 1000 + "seconds");
-        System.out.println("everything: " + (t3 - t1) / 1000 + "seconds");
-        
+        System.out.println("Reading took: " + (t2 - t1) / 1000 + " seconds");
+        System.out.println("Stable Marriage took: " + (t3 - t2) / 1000 + " seconds");
+        System.out.println("Total: " + (t3 - t1) / 1000 + " seconds");
+
     }
 
     public static void printResults() {
         for (Map.Entry<Integer, Integer> entry : engaged.entrySet()) {
             System.out.println(entry.getValue().toString());
-        }
-    }
-
-    public static void printPrefList() {
-        for (Map.Entry<Integer, Queue<Integer>> entry : mPreferenceList.entrySet()) {
-            System.out.println(entry.getKey() + ":" + entry.getValue().toString());
-        }
-
-        for (Map.Entry<Integer, List<Integer>> entry : wPreferenceList.entrySet()) {
-            System.out.println(entry.getKey() + ":" + entry.getValue().toString());
         }
     }
 

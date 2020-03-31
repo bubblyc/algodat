@@ -2,34 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66c00283-db4b-4cfd-8a40-62c2331ac073" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.fdb_latexmk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.fls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/report.synctex.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/check_solution.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/0testsmall.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/1testsmallmessy.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/2testmid.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/3testlarge.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/4testhuge.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/5testhugemessy.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/output_validator/output_validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/SolutionInv.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/0testsmall.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/0testsmall.verd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/1testsmallmessy.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/1testsmallmessy.verd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/2testmid.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/2testmid.verd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/3testlarge.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/3testlarge.verd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/4testhuge.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/4testhuge.verd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/5testhugemessy.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/5testhugemessy.verd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/check_solution.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/0testsmall.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/1testsmallmessy.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/2testmid.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/3testlarge.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/4testhuge.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/data/secret/5testhugemessy.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/output_validator/output_validator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/report.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1stablemarriage/src/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/Solution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1stablemarriage/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/SolutionInv.java" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/SolutionInv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EDAF05-labs-public-master/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EDAF05-labs-public-master/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EDAF05-labs-public-master/Solution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +39,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -66,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="LaTeX.report">
+  <component name="RunManager" selected="Application.SolutionInv">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -96,6 +88,17 @@
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="EDAF05-labs-public-master" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="$PROJECT_DIR$/1stablemarriage/src/data/secret/4testhuge.in" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionInv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SolutionInv" />
+      <module name="EDAF05-labs-public-master" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="$PROJECT_DIR$/1stablemarriage/src/data/secret/4testhuge.in" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,10 +121,25 @@
       </texify>
       <method v="2" />
     </configuration>
+    <configuration name="check_solution.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/1stablemarriage/src/check_solution.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/1stablemarriage/src" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.SolutionInv" />
+      <item itemvalue="Shell Script.check_solution.sh" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="LaTeX.report" />
+        <item itemvalue="Application.SolutionInv" />
         <item itemvalue="Application.Solution" />
+        <item itemvalue="Shell Script.check_solution.sh" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -153,41 +171,97 @@
       <option name="presentableId" value="Default" />
       <updated>1585304389787</updated>
     </task>
+    <task id="LOCAL-00001" summary="reformatted code">
+      <created>1585494080101</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585494080101</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="LATEX_RUN_CONFIGURATION" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="reformatted code" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformatted code" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="132" y="1" key="CommitChangelistDialog2" timestamp="1585492760072">
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585656127215">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="132" y="1" key="CommitChangelistDialog2/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492760072" />
-    <state width="1238" height="67" key="GridCell.Tab.0.bottom" timestamp="1585492760335">
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585656127215" />
+    <state x="375" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585659351495">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="67" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492760335" />
-    <state width="1238" height="67" key="GridCell.Tab.0.center" timestamp="1585492760331">
+    <state x="375" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585659351495" />
+    <state x="243" y="82" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1585601697465">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="67" key="GridCell.Tab.0.center/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492760331" />
-    <state width="1238" height="67" key="GridCell.Tab.0.left" timestamp="1585492760330">
+    <state x="243" y="82" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585601697465" />
+    <state x="132" y="1" key="CommitChangelistDialog2" timestamp="1585494079576">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="67" key="GridCell.Tab.0.left/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492760330" />
-    <state width="1238" height="67" key="GridCell.Tab.0.right" timestamp="1585492760333">
+    <state x="132" y="1" key="CommitChangelistDialog2/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585494079576" />
+    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1585640252683">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="67" key="GridCell.Tab.0.right/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492760333" />
-    <state x="0" y="0" width="1280" height="722" key="SettingsEditor" timestamp="1585492280822">
+    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1585640252683" />
+    <state width="1238" height="190" key="GridCell.Tab.0.bottom" timestamp="1585659085880">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585659085880" />
+    <state width="1238" height="190" key="GridCell.Tab.0.center" timestamp="1585659085879">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.center/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585659085879" />
+    <state width="1238" height="190" key="GridCell.Tab.0.left" timestamp="1585659085878">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.left/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585659085878" />
+    <state width="1238" height="190" key="GridCell.Tab.0.right" timestamp="1585659085879">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.right/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585659085879" />
+    <state x="128" y="69" key="MergeDialog" timestamp="1585639936610">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="128" y="69" key="MergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1585639936610" />
+    <state x="351" y="123" key="MultipleFileMergeDialog" timestamp="1585639938621">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="351" y="123" key="MultipleFileMergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1585639938621" />
+    <state x="160" y="56" key="Registry" timestamp="1585601838797">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="160" y="56" key="Registry/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585601838797" />
+    <state x="0" y="0" width="1280" height="722" key="SettingsEditor" timestamp="1585601888893">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1280.800/1280.-17.1024.745@0.0.1280.800" timestamp="1585410427694" />
-    <state x="0" y="0" width="1280" height="722" key="SettingsEditor/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585492280822" />
+    <state x="0" y="0" width="1280" height="722" key="SettingsEditor/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585601888893" />
     <state x="0" y="23" width="1280" height="721" key="SettingsEditor/0.23.1280.721/1280.-17.1024.745@0.23.1280.721" timestamp="1585410286588" />
-    <state x="17" y="23" key="new project wizard" timestamp="1585410352994">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1585494082345">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585494082345" />
+    <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585657208001">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585657208001" />
+    <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1585639914614" />
+    <state x="17" y="0" key="new project wizard" timestamp="1585601800079">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="17" y="0" key="new project wizard/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585601800079" />
     <state x="17" y="23" key="new project wizard/0.23.1280.721/1280.-17.1024.745@0.23.1280.721" timestamp="1585410352994" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1585601826275">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.744/1280.-17.1024.745@0.0.1280.744" timestamp="1585601743557" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585601826275" />
   </component>
 </project>
