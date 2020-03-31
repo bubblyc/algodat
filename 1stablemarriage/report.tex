@@ -15,30 +15,42 @@
   \section{Results}
 
   \todo[inline]{Briefly comment the results, did the script say all your solutions were correct? Approximately how long time does it take for the program to run on the largest input? What takes the majority of the time?}
-    For the largest input it takes about 11 seconds to run the program. Majority of the goes to reading and parsing the input.
-  
+
+    Yes the script says that all our solutions were correct.
+    For the largest input it takes about 15 seconds to run the program. Majority of the goes to reading and parsing the input.
+    Results for 4testhuge.in:
+    Reading took: 14.676 seconds
+    Stable Marriage took: 0.112 seconds
+    Total: 14.788 seconds
+
   \section{Implementation details}
 
   \todo[inline]{How did you implement the solution? Which data structures were used? Which modifications to these data structures were used? What is the overall running time? Why?}
-    For the preferences of the women we used a Map<Integer, List<Integer>>. Every woman as the key and values as a list of her preferences.
+
+    For the preferences of the women we used an int[]. Every woman as the key and values as a list of her preferences. We used a inversed array for women in order to compare her fondness of two men in constant time.
     For the preferences of the men we used a Map<Integer, Queue<Integer>>, where every man is the key and the value is a queue with women.
     We used a queue because we wanted to use the function poll.
     We had a Map for all the engaged couples and we used it to check if a woman was already engaged, and if so was the new proposing man higher ranked than her current man?
     For the collection of women we used a Set to store them.
 
-    Our function readInFromConsole() starts by reading in the first line and store it in a variable called nrbOfPairs. We then proceed to read line by line
+    Our function readInFromConsole() starts by reading in the first line and store it in a variable called nrbOfPairs. We then proceed to read integer by integer
     and stores data in the preference list where the man/woman is the key and his/her preference list is the value. To make sure that we read in correctly we first
     check if the integer already exists in the set of women. If it already exists we know that it must be a man. If not then it must be a woman.
 
-    The function compareFondness() checks if an engaged woman prefers her proposer to her current man.
-
     The function stableMarriage() engages the couple if the woman is not already engaged.
-    If the woman is engaged already we use compareFondness() to see if she will leave her man.
+    If the woman is engaged already we compare the ranks of the men to see if she will leave her man for the proposer.
     If engagement goes through we put the old husband back into the list of available men and puts the new couple in the list of engaged.
     If the engagement does not go through we put the proposer back to the list of available men and he will have to try his luck with the next girl on his list.
     The function stops when the list of available men is empty.
 
     What is the overall running time??
 
+    For the stable marriage algorithm our results show for the tests (3, 4 & 5):
+
+    Stable Marriage took: 0.001 seconds
+    Stable Marriage took: 0.112 seconds
+    Stable Marriage took: 0.023 seconds
+
+    Avg time = 0.045 seconds
 
 \end{document}
