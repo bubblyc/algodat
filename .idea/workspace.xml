@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66c00283-db4b-4cfd-8a40-62c2331ac073" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/2wordladders/src/WordSolution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/report.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/0testsmall.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/0testsmall.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/1testsmallmessy.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/1testsmallmessy.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/2testmid.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/2testmid.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/3testlarge.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/3testlarge.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/4testhuge.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/4testhuge.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/5testhugemessy.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/5testhugemessy.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/sample/1.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/sample/1.ans" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/sample/1.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/sample/1.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/1small1.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/1small1.ans" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/1small1.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/1small1.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/2small2.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/2small2.ans" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/2small2.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/2small2.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/3medium1.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/3medium1.ans" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/3medium1.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/3medium1.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/4medium2.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/4medium2.ans" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/4medium2.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/4medium2.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/5large1.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/5large1.ans" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/5large1.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/5large1.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/6large2.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/6large2.ans" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/6large2.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/6large2.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDAF05-labs-public-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EDAF05-labs-public-master.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +60,14 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.SolutionInv">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2wordladders/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.WordSolution">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -86,23 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="report" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" temporary="true">
-      <texify>
-        <compiler>PDFLATEX</compiler>
-        <compiler-path />
-        <sumatra-path />
-        <viewer-command />
-        <compiler-arguments />
-        <main-file>$PROJECT_DIR$/1stablemarriage/report.tex</main-file>
-        <aux-dir>false</aux-dir>
-        <out-dir>true</out-dir>
-        <compile-twice>false</compile-twice>
-        <output-format>PDF</output-format>
-        <has-been-run>true</has-been-run>
-        <bib-run-config />
-        <makeindex-run-config />
-      </texify>
-      <method v="2" />
+    <configuration name="WordSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WordSolution" />
+      <module name="EDAF05-labs-public-master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="check_solution.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/1stablemarriage/src/check_solution.sh" />
@@ -114,12 +129,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Solution" />
       <item itemvalue="Application.SolutionInv" />
+      <item itemvalue="Application.Solution" />
       <item itemvalue="Shell Script.check_solution.sh" />
+      <item itemvalue="Application.WordSolution" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WordSolution" />
         <item itemvalue="Application.SolutionInv" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Shell Script.check_solution.sh" />
@@ -168,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585659646815</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated report.tex">
+      <created>1585664632835</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585664632835</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -179,7 +203,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="reformatted code" />
     <MESSAGE value="Code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code cleanup" />
+    <MESSAGE value="updated report.tex" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated report.tex" />
   </component>
   <component name="WindowStateProjectService">
     <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585656127215">
@@ -194,30 +219,30 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="243" y="82" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585601697465" />
-    <state x="132" y="1" key="CommitChangelistDialog2" timestamp="1585659646319">
+    <state x="132" y="1" key="CommitChangelistDialog2" timestamp="1585664632604">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="132" y="1" key="CommitChangelistDialog2/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585659646319" />
+    <state x="132" y="1" key="CommitChangelistDialog2/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585664632604" />
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1585640252683">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1585640252683" />
-    <state width="1238" height="190" key="GridCell.Tab.0.bottom" timestamp="1585659085880">
+    <state width="1238" height="190" key="GridCell.Tab.0.bottom" timestamp="1585858420625">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585659085880" />
-    <state width="1238" height="190" key="GridCell.Tab.0.center" timestamp="1585659085879">
+    <state width="1238" height="190" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585858420625" />
+    <state width="1238" height="190" key="GridCell.Tab.0.center" timestamp="1585858420624">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.center/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585659085879" />
-    <state width="1238" height="190" key="GridCell.Tab.0.left" timestamp="1585659085878">
+    <state width="1238" height="190" key="GridCell.Tab.0.center/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585858420624" />
+    <state width="1238" height="190" key="GridCell.Tab.0.left" timestamp="1585858420623">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.left/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585659085878" />
-    <state width="1238" height="190" key="GridCell.Tab.0.right" timestamp="1585659085879">
+    <state width="1238" height="190" key="GridCell.Tab.0.left/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585858420623" />
+    <state width="1238" height="190" key="GridCell.Tab.0.right" timestamp="1585858420624">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.right/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585659085879" />
+    <state width="1238" height="190" key="GridCell.Tab.0.right/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585858420624" />
     <state x="128" y="69" key="MergeDialog" timestamp="1585639936610">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -230,21 +255,26 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="160" y="56" key="Registry/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585601838797" />
-    <state x="0" y="0" width="1280" height="722" key="SettingsEditor" timestamp="1585601888893">
+    <state x="0" y="23" width="1280" height="722" key="SettingsEditor" timestamp="1585853688641">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1280.800/1280.-17.1024.745@0.0.1280.800" timestamp="1585410427694" />
-    <state x="0" y="0" width="1280" height="722" key="SettingsEditor/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585601888893" />
+    <state x="0" y="23" width="1280" height="722" key="SettingsEditor/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585853688641" />
     <state x="0" y="23" width="1280" height="721" key="SettingsEditor/0.23.1280.721/1280.-17.1024.745@0.23.1280.721" timestamp="1585410286588" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1585659651006">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1585664635919">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585659651006" />
-    <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585663970376">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585664635919" />
+    <state x="1618" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585850951394">
+      <screen x="1280" y="-40" width="1024" height="768" />
     </state>
     <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585663970376" />
+    <state x="1618" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800/1280.-40.1024.768@1280.-40.1024.768" timestamp="1585850951394" />
     <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1585639914614" />
+    <state x="1280" y="-40" width="957" height="562" key="dock-window-1" timestamp="1585851577397">
+      <screen x="1280" y="-17" width="1024" height="745" />
+    </state>
+    <state x="1280" y="-40" width="957" height="562" key="dock-window-1/0.23.1280.777/1280.-17.1024.745@0.23.1280.777" timestamp="1585851577397" />
     <state x="17" y="0" key="new project wizard" timestamp="1585601800079">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
