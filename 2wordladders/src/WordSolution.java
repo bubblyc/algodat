@@ -1,3 +1,5 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.ArrayList;
@@ -10,7 +12,6 @@ import java.util.Queue;
 
 public class WordSolution {
     private static int nbrOfWords;
-    private static int nbrOfQueries;
     private static Node[] words;
     private static Map<Node, Node> queries = new HashMap<>();
     private static Map<Node, List<Node>> neighbours = new HashMap<>();
@@ -20,12 +21,14 @@ public class WordSolution {
     // Then follows N lines with one five-letter word each.
     // After that comes Q lines containing two spaced-separated five-letter words
     // each. (Ex: hello yello)
-    private static void readInFromConsole() {
-        Scanner scanner = new Scanner(System.in);
+    private static void readInFromConsole() throws FileNotFoundException {
+        FileInputStream text = new FileInputStream("2wordladders/src/secret/1small1.in");
+        Scanner scanner = new Scanner(text);
+        //Scanner scanner = new Scanner(System.in);
         // Store words in an array
         String[] temp1 = scanner.nextLine().split(" ");
         nbrOfWords = Integer.parseInt(temp1[0]);
-        nbrOfQueries = Integer.parseInt(temp1[1]);
+        int nbrOfQueries = Integer.parseInt(temp1[1]);
         words = new Node[nbrOfWords];
         for (int i = 0; i < nbrOfWords; i++) {
             String word = scanner.nextLine();
@@ -137,7 +140,7 @@ public class WordSolution {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         readInFromConsole();
         constructNeighbours();
         executeNPrintResults(); 

@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="66c00283-db4b-4cfd-8a40-62c2331ac073" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/src/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/src/WordSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/WordSolution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2wordladders/src/WordSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/WordSolution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +95,6 @@
     <configuration name="WordSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WordSolution" />
       <module name="EDAF05-labs-public-master" />
-      <option name="REDIRECT_INPUT" value="true" />
       <option name="INPUT_FILE" value="$PROJECT_DIR$/2wordladders/src/secret/1small1.in" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,10 +188,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="updated report.tex" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586096706300">
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586110989515">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586096706300" />
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586110989515" />
     <state x="375" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585659351495">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -213,22 +208,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1585640252683" />
-    <state width="1238" height="263" key="GridCell.Tab.0.bottom" timestamp="1586097256212">
+    <state width="1238" height="248" key="GridCell.Tab.0.bottom" timestamp="1586110993531">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097256212" />
-    <state width="1238" height="263" key="GridCell.Tab.0.center" timestamp="1586097256194">
+    <state width="1238" height="248" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586110993531" />
+    <state width="1238" height="248" key="GridCell.Tab.0.center" timestamp="1586110993527">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.0.center/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097256194" />
-    <state width="1238" height="263" key="GridCell.Tab.0.left" timestamp="1586097256190">
+    <state width="1238" height="248" key="GridCell.Tab.0.center/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586110993527" />
+    <state width="1238" height="248" key="GridCell.Tab.0.left" timestamp="1586110993525">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.0.left/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097256190" />
-    <state width="1238" height="263" key="GridCell.Tab.0.right" timestamp="1586097256202">
+    <state width="1238" height="248" key="GridCell.Tab.0.left/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586110993525" />
+    <state width="1238" height="248" key="GridCell.Tab.0.right" timestamp="1586110993529">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.0.right/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097256202" />
+    <state width="1238" height="248" key="GridCell.Tab.0.right/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586110993529" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1586097257052">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -287,19 +282,5 @@
     </state>
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.744/1280.-17.1024.745@0.0.1280.744" timestamp="1585601743557" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585601826275" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/2wordladders/src/WordSolution.java</url>
-          <line>105</line>
-          <properties class="WordSolution" method="executeNPrintResults">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
