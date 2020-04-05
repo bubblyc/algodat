@@ -18,5 +18,9 @@ public class Node {
     public Node getPred() {
         return pred; 
     }
+
+    public Boolean equals(Node node){
+        return word.equals(node.getWord());
+    }
     
 }

@@ -12,108 +12,141 @@ public class WordSolution {
     private static int nbrOfWords;
     private static int nbrOfQueries;
     private static Node[] words;
-    private static Map<Node, Node> queries = new HashMap<>();  
+    private static Map<Node, Node> queries = new HashMap<>();
     private static Map<Node, List<Node>> neighbours = new HashMap<>();
 
-  
-    
-
-    //Read from input. First line has two integers N, Q
-    //where N = nbr of words and Q = number of queries)
-    //Then follows N lines with one five-letter word each.
-    //After that comes Q lines containing two spaced-separated five-letter words each. (Ex: hello yello)
+    // Read from input. First line has two integers N, Q
+    // where N = nbr of words and Q = number of queries)
+    // Then follows N lines with one five-letter word each.
+    // After that comes Q lines containing two spaced-separated five-letter words
+    // each. (Ex: hello yello)
     private static void readInFromConsole() {
         Scanner scanner = new Scanner(System.in);
-        //Store words in an array
+        // Store words in an array
         String[] temp1 = scanner.nextLine().split(" ");
         nbrOfWords = Integer.parseInt(temp1[0]);
         nbrOfQueries = Integer.parseInt(temp1[1]);
         words = new Node[nbrOfWords];
-        for (int i = 0; i < nbrOfWords; i ++){
+        for (int i = 0; i < nbrOfWords; i++) {
             String word = scanner.nextLine();
             words[i] = new Node(word);
-            
+
         }
-        for (int i = 0; i < nbrOfQueries; i ++) {
+        for (int i = 0; i < nbrOfQueries; i++) {
             String[] temp = new String[2];
             temp = scanner.nextLine().split(" ");
             queries.put(new Node(temp[0]), new Node(temp[1]));
         }
-        scanner.close(); 
+        scanner.close();
     }
 
-    
-
-    //Constructs a graph with
-    private void constructGraph(){
-
-    }
-
-    private static void findShortestPath(Node startingNode, Node endingNode) {
-        Queue<Node> q = new LinkedList<>(); 
-        Set<Node> visited = new HashSet<>(); 
-        visited.add(startingNode);
-        q.add(startingNode);
-        while(q.size() != 0){
-            Node v = q.peek();
-            for(Node w : neighbours.get(v)){
-                if(!visited.contains(w)){
-                    visited.add(w);
-                    q.add(w);
-                    w.setPred(v);
-                    if(w.getWord() == endingNode.getWord()){
-                        System.out.println("path found");
-                        while(w.getWord() != startingNode.getWord()){
-                            w = w.getPred();
-                            System.out.println(w.getWord());
-                        }
-                        return;
-                    }
+    // Constructs a graph with
+    private static void constructNeighbours() {
+        for(int w = 0; w < nbrOfWords; w++){
+            List<Node> listOfNeighbour = new ArrayList<>();
+            for(int n = 0; n< nbrOfWords - 1; n++){
+                if(containsLetters(words[w].getWord(), words[n].getWord()) && !words[w].equals(words[n])){
+                  listOfNeighbour.add(words[n]);
                 }
             }
-            System.out.println("no path found");
-            return;
+            neighbours.put(words[w], listOfNeighbour);
         }
     }
 
-    //Checks if the last 4 letters in startingWord exists in endingWord.
-    //Note that order doesn't matter ex hello lolem -> true
+    private static int findShortestPath(Node startingNode, Node endingNode) {
+        if (startingNode.getWord().equals(endingNode.getWord())) {
+            return 0;
+        } else {
+            int lengthOfPath = 1;
+            Queue<Node> q = new LinkedList<>();
+            Set<Node> visited = new HashSet<>();
+            q.add(startingNode);
+            visited.add(startingNode);
+            while (q.size() != 0) {
+                Node v = q.poll();
+                List<Node> temp = neighbours.get(v);
+                if (temp != null) {
+                    for (Node w : temp) {
+                        if (!visited.contains(w)) {
+                            q.add(w);
+                            visited.add(w);
+                            w.setPred(v);
+                            if (w.equals(endingNode)) {
+                                return lengthOfPath;
+                            }
+                        }
+                    }
+                }
+                lengthOfPath++;
+            }
+            return -1;
+        }
+    }
+
+    // Checks if the last 4 letters in startingWord exists in endingWord.
+    // Note that order doesn't matter ex hello lolem -> true
     private static boolean containsLetters(String currentWord, String neighbourWord) {
         char[] w1 = currentWord.substring(1).toCharArray();
-    
-        return false;
+        String temp = neighbourWord; //wello
+        for (int i = 0; i < 4; i ++) {
+            char letter = w1[i]; //e
+            int index = temp.indexOf(letter);
+            if (index == -1) {
+                return false;
+            } else{
+                temp = temp.substring(0, index) + temp.substring(index+1);
+            }
+        }
+        return true;
     }
 
-    //If there exists a path from the starting to ending word, print the length of the shortest path.
+    // If there exists a path from the starting to ending word, print the length of
+    // the shortest path.
     // Otherwise print "Impossible".
-    private void printResults() {
-        //TODO
+    private static void executeNPrintResults() {
+        for (Map.Entry<Node, Node> m : queries.entrySet()) {
+            int path = findShortestPath(m.getKey(), m.getValue());
+            if (path == -1) {
+                    System.out.println("Impossible");
+            } else {
+                System.out.println(path);
+            }
+        }
     }
 
-    private static void printOutMap() {
+    private static void printWords(){
+        for (int i = 0; i < words.length; i++) {
+            System.out.println(words[i].getWord());
+        }
+    }
+
+    private static void printQueries() {
         for (Map.Entry<Node, Node> m : queries.entrySet()) {
-            System.out.println(m.getKey().getWord() + " "+ m.getValue().getWord());
+            System.out.println(m.getKey().getWord() + " " + m.getValue().getWord());
+        }
+    }
+
+    private static void printNeighbours() {
+        for (Map.Entry<Node, List<Node>> n : neighbours.entrySet()) {
+            System.out.println(n.getKey().getWord() + ": " );
+            for (Node ne: n.getValue()){
+                System.out.print(ne.getWord() + " ");
+            }
+            System.out.println("\n");
+            
         }
     }
 
     public static void main(String[] args) {
         readInFromConsole();
-        //printOutMap();
-        Node hello = new Node("hello");
-        Node where = new Node("where");
-        Node putin = new Node("putin");
-        List<Node> list =new ArrayList<Node>();
-        list.add(where);
-        neighbours.put(hello, list); 
-        findShortestPath(hello, where);
-        findShortestPath(hello, putin);
+        constructNeighbours();
+        executeNPrintResults(); 
     }
 }
 
 /*
-TODO:
-- parsa inläsningen för att skapa grannlistan
-- returnera längen på pathen, nu har vi lyckats hitta en path
-- vad gör Pred?? är den nödvändigt, om inte så behöver vi inte Node-klassen
-- Titta på tidskomlplexiteten, behöver vi optimera?? 
-*/
+ * TODO: 
+ * - vad gör Pred?? är den nödvändigt, om inte så behöver vi inte Node-klassen 
+ * - Titta på tidskomlplexiteten, behöver vi optimera?? 
+ * - Fyll i report och labbfrågor.
+ */

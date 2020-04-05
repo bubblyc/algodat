@@ -2,29 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66c00283-db4b-4cfd-8a40-62c2331ac073" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2wordladders/src/WordSolution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/0testsmall.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/0testsmall.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/1testsmallmessy.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/1testsmallmessy.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/2testmid.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/2testmid.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/3testlarge.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/3testlarge.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/4testhuge.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/4testhuge.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1stablemarriage/src/data/secret/5testhugemessy.out" beforeDir="false" afterPath="$PROJECT_DIR$/1stablemarriage/src/data/secret/5testhugemessy.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/sample/1.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/sample/1.ans" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/sample/1.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/sample/1.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/1small1.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/1small1.ans" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/1small1.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/1small1.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/2small2.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/2small2.ans" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/2small2.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/2small2.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/3medium1.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/3medium1.ans" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/3medium1.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/3medium1.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/4medium2.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/4medium2.ans" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/4medium2.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/4medium2.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/5large1.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/5large1.ans" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/5large1.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/5large1.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/6large2.ans" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/6large2.ans" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2wordladders/data/secret/6large2.in" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/secret/6large2.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EDAF05-labs-public-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EDAF05-labs-public-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/src/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/src/WordSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/WordSolution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2wordladders/src/WordSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/2wordladders/src/WordSolution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +43,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
@@ -115,6 +99,8 @@
     <configuration name="WordSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WordSolution" />
       <module name="EDAF05-labs-public-master" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="$PROJECT_DIR$/2wordladders/src/secret/1small1.in" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,8 +117,8 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.SolutionInv" />
       <item itemvalue="Application.Solution" />
-      <item itemvalue="Shell Script.check_solution.sh" />
       <item itemvalue="Application.WordSolution" />
+      <item itemvalue="Shell Script.check_solution.sh" />
     </list>
     <recent_temporary>
       <list>
@@ -207,10 +193,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="updated report.tex" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585656127215">
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586096706300">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585656127215" />
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586096706300" />
     <state x="375" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585659351495">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -227,22 +213,38 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1585640252683" />
-    <state width="1238" height="190" key="GridCell.Tab.0.bottom" timestamp="1585858420625">
+    <state width="1238" height="263" key="GridCell.Tab.0.bottom" timestamp="1586097256212">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585858420625" />
-    <state width="1238" height="190" key="GridCell.Tab.0.center" timestamp="1585858420624">
+    <state width="1238" height="263" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097256212" />
+    <state width="1238" height="263" key="GridCell.Tab.0.center" timestamp="1586097256194">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.center/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585858420624" />
-    <state width="1238" height="190" key="GridCell.Tab.0.left" timestamp="1585858420623">
+    <state width="1238" height="263" key="GridCell.Tab.0.center/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097256194" />
+    <state width="1238" height="263" key="GridCell.Tab.0.left" timestamp="1586097256190">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.left/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585858420623" />
-    <state width="1238" height="190" key="GridCell.Tab.0.right" timestamp="1585858420624">
+    <state width="1238" height="263" key="GridCell.Tab.0.left/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097256190" />
+    <state width="1238" height="263" key="GridCell.Tab.0.right" timestamp="1586097256202">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.right/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585858420624" />
+    <state width="1238" height="263" key="GridCell.Tab.0.right/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097256202" />
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1586097257052">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097257052" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1586097257048">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097257048" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1586097257046">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097257046" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1586097257050">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1586097257050" />
     <state x="128" y="69" key="MergeDialog" timestamp="1585639936610">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -285,5 +287,19 @@
     </state>
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.744/1280.-17.1024.745@0.0.1280.744" timestamp="1585601743557" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/1280.-40.1024.768@0.0.1280.800" timestamp="1585601826275" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/2wordladders/src/WordSolution.java</url>
+          <line>105</line>
+          <properties class="WordSolution" method="executeNPrintResults">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

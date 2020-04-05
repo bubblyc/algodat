@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Debug (Launch) with Arguments Prompt",
+            "request": "launch",
+            "mainClass": "",
+            "args": "${/secret/1small1.in}"
+        },
+        
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - WordSolution",
             "request": "launch",
             "mainClass": "WordSolution",
