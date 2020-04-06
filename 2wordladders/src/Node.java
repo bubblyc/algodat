@@ -1,17 +1,22 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class Node {
     private String word;
     private Node pred;
+    private Set neighbours = new HashSet();
 
-    public Node(String s){
+    Node(String s){
         word=s;
     }
 
-    public void setPred(Node v){
+    void setPred(Node v){
         pred = v;
     }
 
-    public String getWord() {
+    String getWord() {
         return word; 
     }
 
@@ -19,8 +24,16 @@ public class Node {
         return pred; 
     }
 
-    public Boolean equals(Node node){
+    Boolean equals(Node node){
         return word.equals(node.getWord());
+    }
+
+    void addNeighbours(List n){
+        neighbours.addAll(n);
+    }
+
+    Set getNeighbours(){
+        return neighbours;
     }
     
 }

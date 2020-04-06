@@ -12,33 +12,36 @@ import java.util.Queue;
 
 public class WordSolution {
     private static int nbrOfWords;
+    private static int nbrOfQueries;
     private static Node[] words;
+    private static Node[] query ;
     private static Map<Node, Node> queries = new HashMap<>();
-    private static Map<Node, List<Node>> neighbours = new HashMap<>();
+    private static Map<String, List<Node>> neighbours = new HashMap<>();
 
     // Read from input. First line has two integers N, Q
     // where N = nbr of words and Q = number of queries)
     // Then follows N lines with one five-letter word each.
     // After that comes Q lines containing two spaced-separated five-letter words
     // each. (Ex: hello yello)
-    private static void readInFromConsole() throws FileNotFoundException {
-        FileInputStream text = new FileInputStream("2wordladders/src/secret/1small1.in");
-        Scanner scanner = new Scanner(text);
-        //Scanner scanner = new Scanner(System.in);
+    private static void readInFromConsole() {
+        Scanner scanner = new Scanner(System.in);
         // Store words in an array
         String[] temp1 = scanner.nextLine().split(" ");
         nbrOfWords = Integer.parseInt(temp1[0]);
-        int nbrOfQueries = Integer.parseInt(temp1[1]);
+        nbrOfQueries = Integer.parseInt(temp1[1]);
         words = new Node[nbrOfWords];
         for (int i = 0; i < nbrOfWords; i++) {
             String word = scanner.nextLine();
             words[i] = new Node(word);
 
         }
-        for (int i = 0; i < nbrOfQueries; i++) {
-            String[] temp = new String[2];
+        query= new Node[nbrOfQueries*2];
+        for (int i = 0; i < nbrOfQueries * 2 -1; i+=2) {
+            String[] temp;
             temp = scanner.nextLine().split(" ");
-            queries.put(new Node(temp[0]), new Node(temp[1]));
+            query[i] = new Node(temp[0]);
+            query[i+1] = new Node(temp[1]);
+            //queries.put(new Node(temp[0]), new Node(temp[1]));
         }
         scanner.close();
     }
@@ -47,12 +50,12 @@ public class WordSolution {
     private static void constructNeighbours() {
         for(int w = 0; w < nbrOfWords; w++){
             List<Node> listOfNeighbour = new ArrayList<>();
-            for(int n = 0; n< nbrOfWords - 1; n++){
+            for(int n = 0; n< nbrOfWords; n++){
                 if(containsLetters(words[w].getWord(), words[n].getWord()) && !words[w].equals(words[n])){
                   listOfNeighbour.add(words[n]);
                 }
             }
-            neighbours.put(words[w], listOfNeighbour);
+            neighbours.put(words[w].getWord(), listOfNeighbour);
         }
     }
 
@@ -67,7 +70,7 @@ public class WordSolution {
             visited.add(startingNode);
             while (q.size() != 0) {
                 Node v = q.poll();
-                List<Node> temp = neighbours.get(v);
+                List<Node> temp = neighbours.get(v.getWord());
                 if (temp != null) {
                     for (Node w : temp) {
                         if (!visited.contains(w)) {
@@ -75,12 +78,17 @@ public class WordSolution {
                             visited.add(w);
                             w.setPred(v);
                             if (w.equals(endingNode)) {
+                                Node tempNode = w.getPred();
+                                while(!tempNode.equals(startingNode)){
+                                    lengthOfPath++;
+                                    tempNode = tempNode.getPred();
+                                }
                                 return lengthOfPath;
                             }
                         }
                     }
                 }
-                lengthOfPath++;
+                //lengthOfPath++;
             }
             return -1;
         }
@@ -107,6 +115,15 @@ public class WordSolution {
     // the shortest path.
     // Otherwise print "Impossible".
     private static void executeNPrintResults() {
+        for(int i=0; i<query.length-1; i+=2){
+            int path = findShortestPath(query[i], query[i+1]);
+            if (path == -1) {
+                System.out.println("Impossible");
+            } else {
+                System.out.println(path);
+            }
+        }
+        /*
         for (Map.Entry<Node, Node> m : queries.entrySet()) {
             int path = findShortestPath(m.getKey(), m.getValue());
             if (path == -1) {
@@ -115,11 +132,13 @@ public class WordSolution {
                 System.out.println(path);
             }
         }
+        */
+
     }
 
     private static void printWords(){
-        for (int i = 0; i < words.length; i++) {
-            System.out.println(words[i].getWord());
+        for (Node word : words) {
+            System.out.println(word.getWord());
         }
     }
 
@@ -130,8 +149,8 @@ public class WordSolution {
     }
 
     private static void printNeighbours() {
-        for (Map.Entry<Node, List<Node>> n : neighbours.entrySet()) {
-            System.out.println(n.getKey().getWord() + ": " );
+        for (Map.Entry<String, List<Node>> n : neighbours.entrySet()) {
+            System.out.println(n.getKey() + ": " );
             for (Node ne: n.getValue()){
                 System.out.print(ne.getWord() + " ");
             }
@@ -140,10 +159,11 @@ public class WordSolution {
         }
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         readInFromConsole();
         constructNeighbours();
-        executeNPrintResults(); 
+        executeNPrintResults();
+
     }
 }
 
