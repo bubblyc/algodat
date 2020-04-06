@@ -163,6 +163,7 @@ public class WordSolution {
         readInFromConsole();
         constructNeighbours();
         executeNPrintResults();
+        System.out.println("testing");
 
     }
 }
