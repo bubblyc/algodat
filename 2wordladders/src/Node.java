@@ -6,7 +6,6 @@ import java.util.Set;
 public class Node {
     private String word;
     private Node pred;
-    private Set neighbours = new HashSet();
 
     Node(String s){
         word=s;
@@ -28,12 +27,5 @@ public class Node {
         return word.equals(node.getWord());
     }
 
-    void addNeighbours(List n){
-        neighbours.addAll(n);
-    }
-
-    Set getNeighbours(){
-        return neighbours;
-    }
     
 }
