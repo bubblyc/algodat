@@ -1,20 +1,18 @@
 #!/bin/bash
-# make exacutable: chmod +x check_solution.sh
+# make executable: chmod +x check_solution.sh
 # run: ./check_solution.sh pypy A.py
 # or
-# ./check_solution.sh java Solution
-# ./check_solution.sh java SolutionInv
+# ./check_solution.sh java solution
 # ./check_solution.sh ./a.out
 
-for f in data/**/*.in; do
+for f in secret/*.in; do
     echo $f
     pre=${f%.in}
     out=$pre.out
-    verdict=$pre.verd
+    ans=$pre.ans
     $* < $f > $out
-    echo 'Checking...'
-    python3 output_validator/output_validator.py $f < $out > $verdict
-    if grep -Fxq "success" $verdict
+    DIFF=$(diff $ans $out)
+    if [ "$DIFF" == "" ]
     then 
         echo Correct!
     else

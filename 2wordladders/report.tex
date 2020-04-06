@@ -15,9 +15,39 @@
   \section{Results}
 
   \todo[inline]{Briefly comment the results, did the script say all your solutions were correct? Approximately how long time does it take for the program to run on the largest input? What takes the majority of the time?}
+  Yes all solutions correct.
+  Total time for the program:
+
+  5large1.in:
+  Reading took: 0.154 seconds
+  Constructing neighbours took: 2.938 seconds
+  Algorithm took 5.214 seconds
+  Total: 8.306 seconds
+
+  6large2.in:
+  Reading took: 0.209 seconds
+  Constructing neighbours took: 1.943 seconds
+  Algorithm took 0.069 seconds
+  Total: 2.221 seconds
+
+  Majority of the time is constructing neighbours and find shortest path algoritm.
 
   \section{Implementation details}
 
   \todo[inline]{How did you implement the solution? Which data structures were used? Which modifications to these data structures were used? What is the overall running time? Why?}
+
+    Node[] words = array with all the words
+    Node[] query = array with all the queries
+    Map<String, List<Node>> neighbours = each word as key and its list of neighbours as value.
+
+    Queue <Node> q = The queue which the all the nodes are put in. As the algorithm searches for a path the nodes are polled.
+    Set<Node> visited = all the visited nodes will be put here
+    Find Shortest Path Algorithm:
+    - As long as q is not empty poll q and get the nodes neighbours. If neighbours are not visited add them to q.
+    - If ending node is found return path length
+    - Else return -1
+
+    Overall running time depends on if there are a lot of neighbours or not.
+    Total execution time for 5large1 was 8.3 seconds whereas 6large2 took 2.2 seconds.
 
 \end{document}
