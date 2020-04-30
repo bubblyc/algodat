@@ -15,9 +15,28 @@
   \section{Results}
 
   \todo[inline]{Briefly comment the results, did the script say all your solutions were correct? Approximately how long time does it take for the program to run on the largest input? What takes the majority of the time?}
+  The program passes all the tests.
+  It takes around 13s to execute it with the largest input.
+  Reading and parsing the input takes the longest time, about 9 seconds
 
   \section{Implementation details}
 
-  \todo[inline]{How did you implement the solution? Which data structures were used? Which modifications to these data structures were used? What is the overall running time? Why?}
+  \todo[inline]{How did you implement the solution?
+  We had:
+  An Edge-class to represent an edge, its two nodes and weight.
+  Graph-class to represent the collection of edge with LinkedLists in an array of nodes.
+  And a Solution-class in which we implemented the prim-algorithm
+
+  Which data structures were used?
+  We used a priorityQueue to sort the edges and to choose the edge with lowest cost.
+  An Boolean Array to hold information about which edges are visited or not.
+
+  Which modifications to these data structures were used?
+  We didn't modify any of the data structures, but we did have to make the class edge comparable to compare them based on their costs.
+
+  What is the overall running time? Why?
+  The overall running time was around 13s
+  }
+
 
 \end{document}
