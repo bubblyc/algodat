@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/1stablemarriage/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/2wordladders/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/3makingfriends/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4closestpair/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
