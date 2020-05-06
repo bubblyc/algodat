@@ -80,12 +80,8 @@ public class PairSolution {
 
             for(int i = mid; i < sortByX.size(); i++){
                 rightX.add(sortByX.get(i));
-            }
-
-            for(int i = mid; i < sortByY.size(); i++){
                 rightY.add(sortByY.get(i));
             }
-
 
             //Solve the two subproblems (Lx, Ly, size/2) and (Rx, Ry, size/2)
             double distLeft = closest(leftX, leftY, mid);

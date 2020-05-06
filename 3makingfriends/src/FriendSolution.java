@@ -64,9 +64,14 @@ public class FriendSolution {
 
 
     public static void main(String[] args) {
+        //double t1 = System.currentTimeMillis();
         readIn();
+        //double t2 = System.currentTimeMillis();
         solvePrimsMST();
-        System.out.println(minCostSum);
+        //double t3 = System.currentTimeMillis();
+        //System.out.println(minCostSum);
+        //System.out.println("ReadIn took: " + (t2-t1)/1000 + "s");
+        //System.out.println("Prim's took: " + (t3-t2)/1000 + "s");
     }
 }
 
