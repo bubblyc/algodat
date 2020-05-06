@@ -95,14 +95,14 @@ public class PairSolution {
             double d = Math.min(distLeft, distRight);
             //Create the set Sy from Py (Bridge between left and right)
             List<Point> strip = new ArrayList<>();
-
             for(int i = 0; i < sortByY.size(); i++){
                 int x = sortByY.get(i).getX();
                 if(midx-((int)d) < x || midx+((int)d) > x) strip.add(sortByX.get(i));
             }
 
             //Check each point in Sy to see if any nearby points is closer than delta
-            double stripd = Double.MAX_VALUE;
+            double stripd = bruteForce(strip);
+            /*
             for(int i = 0; i < strip.size(); i++){
                 for(int j = i + 1; j < Math.min(15, strip.size()); j++){
                     double dist = strip.get(i).distance(strip.get(j));
@@ -111,6 +111,8 @@ public class PairSolution {
                     }
                 }
             }
+
+             */
             return Math.min(d, stripd);
         }
 
@@ -122,7 +124,7 @@ public class PairSolution {
         int n = p.size();
         double min = Double.MAX_VALUE;
         for(int i = 0; i < n; i++){
-            for(int j = i + 1; j < n; j++){
+            for(int j = i + 1; j < Math.min(n, 15); j++){
                 double dist = p.get(i).distance(p.get(j));
                 if(dist < min){
                     min = dist;
