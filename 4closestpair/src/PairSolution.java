@@ -11,8 +11,8 @@ public class PairSolution {
         readIn();
         //testPrint();
         double t = System.currentTimeMillis();
-        System.out.printf(Locale.ENGLISH, "%.6f %n",closestPoints());
-        System.out.println(System.currentTimeMillis()-t);
+        System.out.printf(Locale.ENGLISH, "%.6f%n",closestPoints());
+        //System.out.println(System.currentTimeMillis()-t);
     }
 
     private static void readIn() {
