@@ -2,7 +2,7 @@
 # make exacutable: chmod +x check_solution.sh
 # run: ./check_solution.sh pypy A.py
 # or
-# ./check_solution.sh java solution
+# ./check_solution.sh java GorillaSolution
 # ./check_solution.sh ./a.out
 
 for f in data/**/*.in; do
