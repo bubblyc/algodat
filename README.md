@@ -1,10 +1,16 @@
 # About the labs
-1. statble marriage: An implementation of Gale-Shapley algorithm, for perfectly matching two arrays of elements based on preferences.
-2. word ladder: An implementation of Breath-first search algorithm for finding the shortest paths.
-3. making friends: An implementation of Prim's algorithm that finds a Minimal Spanning Tree in a graph.
-4. closest pair: An implementation of a divide-and-conquer algorithm which finds the closes pair on a plane with given x,y-coordinates.
-5. gorilla: An implementation of dynamic programming for solving a sequence alignment problem with costs of alignment.
-6. railway planning: Solving an network flow problem with Ford-Fulkeson algorithm.
+1. statble marriage: 
+    An implementation of Gale-Shapley algorithm, for perfectly matching two arrays of elements based on preferences.
+2. word ladder: 
+    An implementation of Breath-first search algorithm for finding the shortest paths.
+3. making friends: 
+    An implementation of Prim's algorithm that finds a Minimal Spanning Tree in a graph.
+4. closest pair: 
+    An implementation of a divide-and-conquer algorithm which finds the closes pair on a plane with given x,y-coordinates.
+5. gorilla: 
+    An implementation of dynamic programming for solving a sequence alignment problem with costs of alignment.
+6. railway planning: 
+    Solving an network flow problem with Ford-Fulkeson algorithm.
 
 # EDAF05-labs
 Labs for EDAF05, held at LTH during study period 4 2018-19. Lecturer and course convenor is Jonas Skeppstedt. This version of the lab assignments are written and maintained by Lars Åström. Previous versions have been written by Thore Husfeldt and Måns Magnusson, lots of credit is given to them regarding the labs! If you find any errors, ambiguities or anything else that should be corrected - please contact me via e-mail: astrom.lars@telia.com, or submit an issue on [github](https://github.com/LarsAstrom/EDAF05-labs-public/issues).   
